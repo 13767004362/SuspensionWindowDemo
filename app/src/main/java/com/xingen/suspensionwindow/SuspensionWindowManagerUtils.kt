@@ -37,7 +37,11 @@ class SuspensionWindowManagerUtils {
         /**
          * 悬浮窗口是否已经打开
          */
-        fun windowIsOpen()=if (suspensionWindowWidget!==null) true else false
+        fun windowIsOpen():Boolean{
+            if (suspensionWindowWidget!=null)
+                return true
+            else  return false
+        }
 
 
         /**
